@@ -14,20 +14,52 @@
 h2,
 h3 {
   color: #00006b;
+  padding: 20px 0px 20px 0px;
 }
 .title-2 {
   background-color: #4bf0b9;
-  width: 70%;
+  width: 90%;
   margin: auto;
+  border-radius: 4px;
+  padding: 20px;
 }
 .more button {
   margin: 0 auto;
+  border: 2px solid rgba(0, 0, 107, 0.3);
+  padding: 1em 1.2em;
+  border-radius: 6px;
+  line-height: 1.3333333333;
+  background: transparent;
+  outline: 0;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  transition-timing-function: ease-in-out;
+  font-weight: 700;
 }
 .choice {
   display: flex;
-  justify-content: space-between;
-  width: 70%;
-  margin: auto;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto 25px;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.impact a,
+.lening a {
+  border-bottom: 1px solid rgba(0, 0, 107, 0.3);
+  text-decoration: none;
+}
+.impact,
+.lening,
+.bank {
+  padding: 20px;
+}
+.bank a {
+  padding: 20px 5px;
+  text-decoration: none;
 }
 .pic {
   position: absolute;
@@ -39,7 +71,8 @@ img {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  color: black;
+  color: white;
+  min-height: 100vw;
 }
 .insert {
   position: relative;
@@ -47,6 +80,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-self: baseline;
+  padding: 200px 10px 50px 10px;
 }
 .contact {
   position: relative;
@@ -55,10 +89,33 @@ img {
 h1 {
   display: block;
   text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: Akkurat, Arial, sans-serif;
+}
+p {
+  text-align: center;
+  color: white;
+  padding: 15px 5px 0px 5px;
 }
 button {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 10px;
+  position: relative;
+  align-self: flex-start;
+  line-height: normal;
+  margin-top: 20px auto;
+  padding: 15px 20px 13px 30px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #00006b;
+  background-color: #fff;
+  border: 2px solid rgba(0, 0, 107, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.1s linear;
+  outline: 0;
 }
 
 footer {
@@ -66,7 +123,65 @@ footer {
 }
 
 @media (min-width: 667px) {
+  .title-2 {
+    background-color: #4bf0b9;
+    width: 80%;
+    border-radius: 4px;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  h2,
+  h3 {
+    color: #00006b;
+    padding: 15px 0px 20px 0px;
+  }
+  .choice {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px auto;
+  }
+  .impact a {
+    border-bottom: none;
+    padding-left: 20px;
+  }
+  .lening a {
+    border-bottom: none;
+    padding: 20px;
+  }
+  img {
+    min-height: 40vw;
+  }
+  .insert {
+    padding: 10px 10px 50px 10px;
+  }
   .contact {
-    margin: 0 auto;
+    margin-top: 330px;
+  }
+  p {
+    padding: 20px;
+  }
+  button {
+    position: relative;
+    align-self: flex-start;
+    line-height: normal;
+    margin-top: 25 auto;
+    padding: 15px 20px 15px 30px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #00006b;
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 107, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+    outline: 0;
   }
 }
